@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script displays all active IPv4 IPs on the machine
 
-# -oP '(?<=inet\s)\d+(\.\d+){3}':option for take IP from inet
-ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | grep -v 127.0.0.1 | cut -d\  -f2
+# Show all ipv4
+ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2
