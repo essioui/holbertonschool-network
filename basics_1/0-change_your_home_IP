@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# This script configures localhost to point to 127.0.0.2 and facebook.com to point to 8.8.8.8
+
 #backup the original /etc/hosts file
 sudo cp /etc/hosts /etc/hosts.bak
 
