@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-netstat -tulnp | grep LISTEN
-netstat -lxp
+ss -tulnps
+ss -lxp
+
